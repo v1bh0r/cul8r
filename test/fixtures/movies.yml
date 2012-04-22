@@ -1,0 +1,27 @@
+one:
+  name: MyString
+  alt_name: MyString
+  popularity: 1
+  rating: 1
+  imdb_rating: 1
+  provider_type: 1
+  provider_id: MyString
+  imdb_id: MyString
+  overview: MyText
+  image_url: MyString
+  url: MyString
+  trailer_url: MyString
+
+two:
+  name: MyString
+  alt_name: MyString
+  popularity: 1
+  rating: 1
+  imdb_rating: 1
+  provider_type: 1
+  provider_id: MyString
+  imdb_id: MyString
+  overview: MyText
+  image_url: MyString
+  url: MyString
+  trailer_url: MyString

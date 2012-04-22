@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>cul8r &lt;3</title>
+  <title><%= yield(:title) %></title>
   <%= stylesheet_link_tag "application", "gritter" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -50,8 +50,17 @@
       <%= js extend_gritter :position => :bottom_right %>
       <%= js add_gritter(flash[:notice], :image => :success, :title => "Notice", :sticky => false, :time => 2000) %>
       <%= js add_gritter(flash[:alert], :image => :warning, :title => "Alert!", :sticky => false, :time => 5000) %>
-      <h2>  <%= yield(:page_header) %>  </h2>
-        <%= yield %>
+
+      <div class="row-fluid">
+        <div class="span2 watch-list">
+            My Watch List
+        </div>
+        <div class="span10">
+          <h2>  <%= yield(:page_header) %>  </h2>
+          <%= yield %>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
