@@ -1,3 +1,13 @@
-<% title @movie.name %>
-
-<%= image_tag @movie.image_url %>
+<% title @movie.name_and_year %>
+<div class="row">
+  <div class='span3 '>
+    <%= image_tag(@movie.poster_detailed) %>
+    <br/>
+    <%= render :partial => 'movie_action_buttons' %>
+  </div>
+  <div class='span4'>
+    <h2><%= @movie.name_and_year %></h2>
+    <span class="label label-info"><%= @movie.critics_score %></span>
+    <%= @movie.synopsis %>
+  </div>
+</div>
