@@ -41,3 +41,8 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'thesilverspoon'
 gem 'omniauth'
 gem "omniauth-facebook"
+gem "ruby-tmdb"
+gem "resque"
+gem "gritter"
+
+gem "mocha", :group => :test

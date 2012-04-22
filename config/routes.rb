@@ -1,4 +1,6 @@
 Cul8r::Application.routes.draw do
+  resources :movies
+
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   get "welcome/index"
