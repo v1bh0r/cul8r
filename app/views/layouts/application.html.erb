@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
   <title><%= yield(:title) %></title>
   <%= stylesheet_link_tag "application", "gritter" %>
@@ -53,7 +53,7 @@
 
       <div class="row-fluid">
         <div class="span2 watch-list">
-            My Watch List
+            <%= render :partial => 'layouts/watch_list' %>
         </div>
         <div class="span10">
           <h2>  <%= yield(:page_header) %>  </h2>
@@ -61,6 +61,9 @@
         </div>
       </div>
 
+      <div class='footer'>
+        &copy; Cul8r. All rights reserved.
+      </div>
     </div>
   </div>
 </div>

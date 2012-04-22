@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120421131654) do
+ActiveRecord::Schema.define(:version => 20120422073318) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -21,22 +21,43 @@ ActiveRecord::Schema.define(:version => 20120421131654) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "movie_database_providers", :force => true do |t|
+    t.string "name"
+  end
+
   create_table "movies", :force => true do |t|
     t.string   "name"
     t.string   "alt_name"
     t.integer  "popularity"
     t.float    "rating"
     t.float    "imdb_rating"
-    t.integer  "provider_type"
-    t.string   "provider_id"
     t.string   "imdb_id"
     t.text     "overview"
     t.string   "image_url"
     t.string   "url"
     t.string   "trailer_url"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",                                :null => false
+    t.datetime "updated_at",                                :null => false
+    t.integer  "year"
+    t.text     "rotten_tomatoes_info"
+    t.integer  "movie_database_provider_id", :default => 1
+    t.string   "md_ref_id"
+    t.string   "critics_rating"
+    t.integer  "critics_score"
+    t.text     "synopsis"
+    t.string   "poster_thumbnail"
+    t.string   "poster_profile"
+    t.string   "poster_detailed"
+    t.string   "poster_original"
+    t.text     "abridged_cast"
+    t.date     "release_dates"
   end
+
+  add_index "movies", ["md_ref_id"], :name => "index_movies_on_md_ref_id"
+  add_index "movies", ["movie_database_provider_id"], :name => "idx_mov_provider"
+  add_index "movies", ["name", "year"], :name => "index_movies_on_name_and_year"
+  add_index "movies", ["name"], :name => "index_movies_on_name"
+  add_index "movies", ["year"], :name => "index_movies_on_year"
 
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"

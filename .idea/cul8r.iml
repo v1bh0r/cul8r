@@ -24,6 +24,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.2, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.2.7, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.2, RVM: ruby-1.9.3-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="badfruit (v1.1.2, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bbenezech-nested_form (v0.0.5, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt-ruby (v3.0.1, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v2.0.1, RVM: ruby-1.9.3-p0) [gem]" level="application" />
@@ -44,6 +45,7 @@
     <orderEntry type="library" scope="PROVIDED" name="hashie (v1.2.0, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.1, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hpricot (v0.8.6, RVM: ruby-1.9.3-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httparty (v0.8.3, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.0, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="journey (v1.0.3, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v2.0.1, RVM: ruby-1.9.3-p0) [gem]" level="application" />
@@ -54,6 +56,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.17.2, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mocha (v0.10.5, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.1.0, RVM: ruby-1.9.3-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.4.4, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multipart-post (v1.1.5, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nifty-generators (v0.4.6, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="oauth2 (v0.5.2, RVM: ruby-1.9.3-p0) [gem]" level="application" />

@@ -2,66 +2,33 @@
 
 <% title 'Movies' %>
 
-<div id="latestMovies" class="carousel">
+<div id="latest-movies" class="carousel">
   <!-- Carousel items -->
   <div class="carousel-inner">
     <% for movie in @movies %>
         <div class="item">
-          <%= link_to(image_tag(movie.image_url, :rel => 'http://werun.se/desireenilsson/files/2012/01/smiley-thumb-up1.gif'), movie) %>
+          <div class="row">
+            <div class='span4'>
+              <%= link_to image_tag(movie.poster_original), movie, :title => movie.synopsis %>
+            </div>
+          </div>
           <div class="carousel-caption">
-            <h4><%= movie.name %></h4>
+            <h4><%= movie.name_and_year %></h4>
             <p><%= movie.overview %></p>
           </div>
         </div>
     <% end %>
   </div>
   <!-- Carousel nav -->
-  <a class="carousel-control left" href="#latestMovies" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#latestMovies" data-slide="next">&rsaquo;</a>
+  <a class="carousel-control left" href="#latest-movies" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#latest-movies" data-slide="next">&rsaquo;</a>
 </div>
 
 <script type="text/javascript">
     $(window).load(function () {
         $($('.carousel-inner .item')[0]).addClass('active');
-        $('.carousel').carousel();
+        $('.carousel').carousel({
+            interval: 10000
+        });
     });
 </script>
-
-<!--<div id="htmlcaption" class="nivo-html-caption">-->
-<!--<strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.-->
-<!--</div>-->
-<!--<table>-->
-<!--<tr>-->
-<!--<th>Name</th>-->
-<!--<th>Alt Name</th>-->
-<!--<th>Popularity</th>-->
-<!--<th>Rating</th>-->
-<!--<th>Imdb Rating</th>-->
-<!--<th>Provider Type</th>-->
-<!--<th>Provider</th>-->
-<!--<th>Imdb</th>-->
-<!--<th>Overview</th>-->
-<!--<th>Image Url</th>-->
-<!--<th>Url</th>-->
-<!--<th>Trailer Url</th>-->
-<!--</tr>-->
-<!--
-<% for movie in @movies %>-->
-    <!--<tr>-->
-    <!--<td><%= movie.name %></td>-->
-    <!--<td><%= movie.alt_name %></td>-->
-    <!--<td><%= movie.popularity %></td>-->
-    <!--<td><%= movie.rating %></td>-->
-    <!--<td><%= movie.imdb_rating %></td>-->
-    <!--<td><%= movie.provider_type %></td>-->
-    <!--<td><%= movie.provider_id %></td>-->
-    <!--<td><%= movie.imdb_id %></td>-->
-    <!--<td><%= movie.overview %></td>-->
-    <!--<td><%= movie.image_url %></td>-->
-    <!--<td><%= movie.url %></td>-->
-    <!--<td><%= movie.trailer_url %></td>-->
-    <!--</tr>-->
-    <!--
-<% end %>-->
-<!--</table>-->
-

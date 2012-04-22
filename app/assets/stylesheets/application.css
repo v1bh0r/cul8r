@@ -13,8 +13,3 @@
 *=require_directory
 */
 *= require gritter
-
-.footer {
-    border-top:solid thin #d3d3d3;
-
-}

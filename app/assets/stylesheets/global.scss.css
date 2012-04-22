@@ -1,0 +1,9 @@
+.footer {
+    border-top:solid thin #d3d3d3;
+    text-align: center;
+}
+
+.watch-list {
+    border-right: solid thin #d3d3d3;
+    height: 100%;
+}

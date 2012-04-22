@@ -44,5 +44,6 @@ gem "omniauth-facebook"
 gem "ruby-tmdb"
 gem "resque"
 gem "gritter"
+gem "badfruit"
 
 gem "mocha", :group => :test
