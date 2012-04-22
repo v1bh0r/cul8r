@@ -1,5 +1,9 @@
 Cul8r::Application.routes.draw do
-  resources :movies
+
+  resources :movies do
+    get 'cul8r'
+    delete 'un_cul8r'
+  end
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 

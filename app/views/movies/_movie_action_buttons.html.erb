@@ -1,1 +1,19 @@
-<button class='btn btn-large btn-primary' onclick="alert('hello')"><i class="icon-heart icon-white"></i>Add to watchlist</button>
+<button style="margin-top:5px" title="Add to your Watch List" class='btn <%= button_size -%> btn-primary' onclick="
+$.ajax({
+        url: '/movies/<%= movie.id %>/cul8r.json'
+        }
+        ).done(function(){
+        //$('#watch_list ul').prepend('<li><%= '' %></li>');
+        }).error(function(data){
+        jQuery(function(){jQuery.gritter.add({image:'/assets/warning.png',time:5000,title:' ',text:data.responseText});});
+        });
+
+
+"><i class="icon-heart icon-white" style="margin-right: 2px"></i>CU l8r
+</button>
+<br/>
+<% unless show_trailer == false or movie.trailer_url.nil? %>
+    <button style="margin-top:5px" title="Opens trailer in a new window" class='btn <%= button_size -%> btn-primary' onclick="window.open('<%= movie.trailer_url %>');">
+      <i class="icon-play icon-white" style="margin-right: 2px"></i>Watch Trailer
+    </button>
+<% end %>

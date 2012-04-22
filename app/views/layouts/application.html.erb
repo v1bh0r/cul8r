@@ -25,12 +25,14 @@
       <div class="container">
         <a class="brand" href="/">cul8r &lt;3</a>
         <ul class="nav">
-          <li><a href="#about" style="color:white;">About</a></li>
+          <li><a href="#about" class="top_nav_link_white">About</a></li>
+          <li><a href="#contact" class="top_nav_link_white">Contact us</a></li>
           <li>
-            <form class="navbar-search pull-left">
-              <input type="text" class="search-query" placeholder="Search">
-            </form>
+            <%= form_tag '', :method => :get, :class => 'navbar-search pull-left' do %>
+                <%= text_field_tag 'q', '', {:class=>'search-query', :placeholder=>"Search movies"}%>
+            <% end %>
           </li>
+          <li><a href="#advanced search" class="top_nav_link_white">more search options</a></li>
         </ul>
 
         <% if user_signed_in? %>
@@ -51,24 +53,30 @@
       <%= js add_gritter(flash[:notice], :image => :success, :title => "Notice", :sticky => false, :time => 2000) %>
       <%= js add_gritter(flash[:alert], :image => :warning, :title => "Alert!", :sticky => false, :time => 5000) %>
 
-      <div class="row-fluid">
-        <div class="span2 watch-list">
-            <%= render :partial => 'layouts/watch_list' %>
-        </div>
-        <div class="span10">
+      <% if current_user %>
+          <div class="row-fluid">
+            <div class="span3 watch-list">
+              <%= render :partial => 'movies/watch_list' %>
+            </div>
+            <div class="span9">
+              <h2>  <%= yield(:page_header) %>  </h2>
+              <%= yield %>
+            </div>
+          </div>
+      <% else %>
           <h2>  <%= yield(:page_header) %>  </h2>
           <%= yield %>
-        </div>
-      </div>
+      <% end %>
 
       <div class='footer'>
-        &copy; Cul8r. All rights reserved.
+        <%= render :partial => 'layouts/footer' %>
       </div>
     </div>
   </div>
 </div>
 
 <%= javascript_include_tag "jquery-pageslide/jquery.pageslide" %>
+
 
 
 </body>

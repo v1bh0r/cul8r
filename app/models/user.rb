@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+
+  has_many :watch_list_movie_entries
   
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
@@ -23,5 +25,13 @@ class User < ActiveRecord::Base
         user.email = data["email"]
       end
     end
+  end
+
+  def name
+    self.email
+  end
+
+  def movies_in_watch_list
+    self.watch_list_movie_entries.all(:include=>:movie, :order => "watch_list_movie_entries.id asc").collect{|entry| entry.movie}
   end
 end

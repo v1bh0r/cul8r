@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120422073318) do
+ActiveRecord::Schema.define(:version => 20120422114546) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -90,5 +90,15 @@ ActiveRecord::Schema.define(:version => 20120422073318) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "watch_list_movie_entries", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "movie_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "watch_list_movie_entries", ["movie_id"], :name => "index_watch_list_movie_entries_on_movie_id"
+  add_index "watch_list_movie_entries", ["user_id"], :name => "idx_watch_list_user"
 
 end

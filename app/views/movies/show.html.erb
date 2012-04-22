@@ -1,13 +1,38 @@
-<% title @movie.name_and_year %>
-<div class="row">
-  <div class='span3 '>
-    <%= image_tag(@movie.poster_detailed) %>
-    <br/>
-    <%= render :partial => 'movie_action_buttons' %>
+<div class="modal" id="myModal">
+  <div class="modal-header">
+    <a class="close" data-dismiss="modal">×</a>
+    <h3><%= @movie.name_and_year %></h3>
   </div>
-  <div class='span4'>
-    <h2><%= @movie.name_and_year %></h2>
-    <span class="label label-info"><%= @movie.critics_score %></span>
-    <%= @movie.synopsis %>
+  <div class="modal-body">
+    <p>
+
+    <div class="row">
+      <div class='span3 '>
+        <%= image_tag(@movie.poster_detailed) %>
+        <br/>
+        <%= render :partial => 'movie_action_buttons', :locals => {:movie => @movie, :button_size => 'btn-large', :show_trailer => true} %>
+      </div>
+      <div class='span3'>
+        <% if @movie.critics_rating %>
+            <span class="label label-info">Verdict: <%= @movie.critics_rating %></span>
+            <span class="label label-info">Rating: <%= @movie.critics_score %>/100</span>
+        <% end %>
+        <p>
+          <%= @movie.synopsis %>
+        </p>
+        <h4>Starring</h4>
+        <% unless @movie.abridged_cast.empty? %>
+            <ul class='unstyled'>
+              <% @movie.abridged_cast.each do |actor| %>
+                  <li>
+                    <h6><%= actor['name'] -%></h6>
+                  </li>
+              <% end %>
+            </ul>
+        <% end %>
+      </div>
+    </div>
+    </p>
   </div>
 </div>
+

@@ -1,9 +1,18 @@
 .footer {
-    border-top:solid thin #d3d3d3;
+    border-top: solid thin #d3d3d3;
     text-align: center;
 }
 
 .watch-list {
     border-right: solid thin #d3d3d3;
-    height: 100%;
+    height: 550px;
+    overflow-y: auto;
+}
+
+.top_nav_link_white {
+    font-weight: bold;
+}
+
+.thumbnail_center_align {
+    text-align: center;
 }

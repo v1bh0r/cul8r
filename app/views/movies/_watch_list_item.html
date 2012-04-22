@@ -1,0 +1,7 @@
+<li class="span2">
+    <div class="thumbnail thumbnail_center_align">
+        <%#= link_to 'remove', movie_un_cul8r_path(movie) , :confirm => "Are you sure?", :method => :delete, :style=>'float:right' %>
+        <%= link_to image_tag(movie.poster_profile, :alt => ''), movie, 'data-toggle'=>"modal", 'data-target'=>"#movie_details" %>
+        <h5><%= movie.name %></h5>
+    </div>
+</li>
