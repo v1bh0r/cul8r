@@ -5,7 +5,7 @@ gem 'rails', '3.2.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3'
+gem 'sqlite3', :group=>:development
 gem 'pg'
 
 
@@ -46,5 +46,6 @@ gem "ruby-tmdb"
 gem "resque"
 gem "gritter"
 gem "badfruit"
+gem "mini_magick"
 
 gem "mocha", :group => :test
