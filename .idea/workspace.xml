@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c202b337-9a73-4e26-a868-394242d226dc" name="Default" comment="Added carousel and gritter notifications">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/remote_movie_database.rb" afterPath="$PROJECT_DIR$/lib/remote_movie_database.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
     </list>
     <ignored path="cul8r.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,10 +69,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movie.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="movie.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="16" selection-start="424" selection-end="424" vertical-scroll-proportion="0.9898477">
+            <state line="13" column="16" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="565" selection-end="565" vertical-scroll-proportion="0.83756346">
               <folding />
             </state>
           </provider>
@@ -91,15 +100,6 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/movies/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="63" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -137,7 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/watch_list_movie_entry.rb" />
         <option value="$PROJECT_DIR$/app/models/movie.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
@@ -153,6 +152,7 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lib/remote_movie_database.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       </list>
     </option>
   </component>
@@ -1145,11 +1145,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/movies/_movie_action_buttons.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="39" selection-start="429" selection-end="441" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="4" selection-start="1125" selection-end="1221" vertical-scroll-proportion="0.0" />
@@ -1236,7 +1231,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="424" selection-end="424" vertical-scroll-proportion="0.9898477">
+        <state line="13" column="16" selection-start="424" selection-end="424" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="565" selection-end="565" vertical-scroll-proportion="0.83756346">
           <folding />
         </state>
       </provider>
