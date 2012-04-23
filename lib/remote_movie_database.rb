@@ -23,7 +23,7 @@ class RemoteMovieDatabase
           :poster_detailed => info['posters']['detailed'],
           :poster_original => info['posters']['original'],
           :abridged_cast => info['abridged_cast'],
-          :release_dates => Date.parse(info['release_dates'])
+          :release_dates => Date.parse(info['release_dates']['theater'])
       )
     end
   end

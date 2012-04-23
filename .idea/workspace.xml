@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c202b337-9a73-4e26-a868-394242d226dc" name="Default" comment="Added carousel and gritter notifications">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/remote_movie_database.rb" afterPath="$PROJECT_DIR$/lib/remote_movie_database.rb" />
     </list>
     <ignored path="cul8r.iws" />
@@ -71,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movie.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="movie.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="23" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+            <state line="13" column="16" selection-start="424" selection-end="424" vertical-scroll-proportion="0.9898477">
               <folding />
             </state>
           </provider>
@@ -83,16 +81,16 @@
       <file leaf-file-name="remote_movie_database.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/remote_movie_database.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="58" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
+            <state line="25" column="69" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="0.7715736">
+            <state line="12" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -153,8 +151,8 @@
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
         <option value="$PROJECT_DIR$/app/uploaders/file_uploader.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/lib/remote_movie_database.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/lib/remote_movie_database.rb" />
       </list>
     </option>
   </component>
@@ -1222,23 +1220,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/remote_movie_database.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="58" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
+        <state line="25" column="69" selection-start="1051" selection-end="1051" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="377" selection-end="377" vertical-scroll-proportion="0.7715736">
+        <state line="13" column="16" selection-start="424" selection-end="424" vertical-scroll-proportion="0.9898477">
           <folding />
         </state>
       </provider>
