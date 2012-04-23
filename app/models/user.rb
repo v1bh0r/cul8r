@@ -34,4 +34,12 @@ class User < ActiveRecord::Base
   def movies_in_watch_list
     self.watch_list_movie_entries.all(:include=>:movie, :order => "watch_list_movie_entries.id asc").collect{|entry| entry.movie}
   end
+
+  def role?
+
+  end
+
+  def admin?
+    self.admin
+  end
 end

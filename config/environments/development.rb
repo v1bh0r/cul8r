@@ -34,4 +34,7 @@ Cul8r::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  FACEBOOK_APP_ID = '344919928902323'
+  FACEBOOK_APP_SECRET = 'd1a79ba73ff79f571cd9b72f4771fb33'
 end

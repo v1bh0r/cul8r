@@ -7,6 +7,8 @@ RailsAdmin.config do |config|
   # require 'i18n'
   # I18n.default_locale = :de
 
+  config.authorize_with :cancan
+
   config.current_user_method { current_user } # auto-generated
 
   # If you want to track changes on your models:
