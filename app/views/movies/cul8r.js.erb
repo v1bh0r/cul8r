@@ -1,0 +1,5 @@
+<% unless @errors %>
+$('#watch_list ul').prepend('<%= escape_javascript(render(:partial => 'watch_list_item', :object => @movie)) %>');
+<% else %>
+$.gritter.add({image:'/assets/warning.png', time:5000, title:' ', text:'<%= escape_javascript @errors%>' });
+<% end %>

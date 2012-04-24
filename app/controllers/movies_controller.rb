@@ -14,11 +14,13 @@ class MoviesController < ApplicationController
 
   def cul8r
     entry = current_user.watch_list_movie_entries.create(:movie_id => params[:movie_id])
-    if entry.errors.messages.empty?
-      #update the list
-      render json: {}, :status => :ok, :content_type => :json
-    else
-      render json: entry.errors.messages.values.join(', '), :status => :bad_request, :content_type => :json
+    respond_to do |format|
+      if entry.errors.messages.empty?
+        #update the list
+        format.js { @movie = Movie.find params[:movie_id] }
+      else
+        format.js { @errors = entry.errors.messages.values.join(', ') }
+      end
     end
   end
 

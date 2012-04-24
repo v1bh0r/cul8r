@@ -2,9 +2,7 @@
 
 <div id='watch_list'>
   <ul class="thumbnails">
-    <% @movies_in_watch_list.each do |movie| %>
-        <%= render :partial => 'watch_list_item', :locals => {:movie => movie} %>
-    <% end %>
+    <%= render :partial=>'watch_list_item', :collection => @movies_in_watch_list %>
   </ul>
 </div>
 

@@ -27,12 +27,14 @@
         <ul class="nav">
           <li><a href="#about" class="top_nav_link_white">About</a></li>
           <li><a href="#contact" class="top_nav_link_white">Contact us</a></li>
-          <li>
-            <%= form_tag '', :method => :get, :class => 'navbar-search pull-left' do %>
-                <%= text_field_tag 'q', '', {:class=>'search-query', :placeholder=>"Search movies"}%>
-            <% end %>
-          </li>
-          <li><a href="#advanced search" class="top_nav_link_white">more search options</a></li>
+          <% if user_signed_in? %>
+              <li>
+                <%= form_tag '', :method => :get, :class => 'navbar-search pull-left' do %>
+                    <%= text_field_tag 'q', '', {:class => 'search-query', :placeholder => "Search movies"} %>
+                <% end %>
+              </li>
+              <li><a href="#advanced search" class="top_nav_link_white">more search options</a></li>
+          <% end %>
         </ul>
 
         <% if user_signed_in? %>
@@ -76,7 +78,6 @@
 </div>
 
 <%= javascript_include_tag "jquery-pageslide/jquery.pageslide" %>
-
 
 
 </body>

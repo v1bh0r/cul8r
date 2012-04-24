@@ -16,3 +16,16 @@
 .thumbnail_center_align {
     text-align: center;
 }
+
+.text_red_center {
+    color:#8e0704;
+    text-align: center;
+}
+
+.text_white {
+    color: white;
+}
+
+.btn {
+    font-weight: bold;
+}
