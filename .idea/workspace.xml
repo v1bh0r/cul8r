@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c202b337-9a73-4e26-a868-394242d226dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/layouts/_login_with_facebook.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/global.scss.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/global.scss.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/movies.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/movies.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/_links.erb" afterPath="$PROJECT_DIR$/app/views/devise/_links.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/movies/index.html.erb" afterPath="$PROJECT_DIR$/app/views/movies/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_notification/welcome.html.erb" afterPath="$PROJECT_DIR$/app/views/user_notification/welcome.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
     </list>
     <ignored path="cul8r.iws" />
@@ -61,7 +54,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="59" selection-start="890" selection-end="895" vertical-scroll-proportion="0.6629834">
+            <state line="9" column="56" selection-start="513" selection-end="513" vertical-scroll-proportion="0.37292817">
               <folding />
             </state>
           </provider>
@@ -1372,7 +1365,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="59" selection-start="890" selection-end="895" vertical-scroll-proportion="0.6629834">
+        <state line="9" column="56" selection-start="513" selection-end="513" vertical-scroll-proportion="0.37292817">
           <folding />
         </state>
       </provider>
