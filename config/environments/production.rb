@@ -70,4 +70,14 @@ Cul8r::Application.configure do
   Cul8r::Application.config.middleware.use ExceptionNotifier,
                                            :sender_address => %{"vibhor.mahajan@gmail.com" },
                                            :exception_recipients => %w{vibhor.mahajan@gmail.com}
+
+  ActionMailer::Base.smtp_settings = {
+      :address        => 'smtp.sendgrid.net',
+      :port           => '587',
+      :authentication => :plain,
+      :user_name      => ENV['SENDGRID_USERNAME'],
+      :password       => ENV['SENDGRID_PASSWORD'],
+      :domain         => 'cul8r.me'
+  }
+  ActionMailer::Base.delivery_method = :smtp
 end
