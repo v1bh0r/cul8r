@@ -108,6 +108,7 @@ GEM
     multi_json (1.1.0)
     multi_xml (0.4.4)
     multipart-post (1.1.5)
+    newrelic_rpm (3.3.4.1)
     nifty-generators (0.4.6)
     oauth2 (0.5.2)
       faraday (~> 0.7)
@@ -215,6 +216,7 @@ DEPENDENCIES
   jquery-rails
   mini_magick
   mocha
+  newrelic_rpm
   omniauth
   omniauth-facebook
   pg
