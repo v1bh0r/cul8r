@@ -47,5 +47,6 @@ gem "resque"
 gem "gritter"
 gem "badfruit"
 gem "mini_magick"
+gem 'newrelic_rpm'
 
 gem "mocha", :group => :test
