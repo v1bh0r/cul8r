@@ -1,19 +1,20 @@
 <% title 'cul8r' %>
-<h1 class='text_red_center'>Hey cool new movie... CU l8r!</h1>
-<p class='text_red_center' style="padding-top:15px;text-align: center;font-size:18px">
+<h1 style='padding-top: 20px'>Hey cool new movie... cul8r ;)</h1>
+<p class='' style="line-height:30px; padding-top:15px;font-size:18px;background: url('assets/cul8r_logo.png') no-repeat right">
   Saw an exciting new movie!<br/>
   Thought I just have to watch it.<br/>
   Days went by and I forgot about it.<br/>
   I wish someone had told me when it was showing in the theaters<br/>
   or when it came out on DVD.<br/>
-  Sounds familiar. Well we won't let that happen to you again. Hop in.<br/>
+  Sounds familiar. Well we won't let that happen to you again.<br/>
   <br/>
-  <button title="Login using your facebook user name and password." class='btn btn-large btn-primary' onclick="window.location = ('<%= user_omniauth_authorize_path(:facebook) %>');">
+  <%= render :partial => 'layouts/login_with_facebook' %> <br/> <br/>
+  <button title="Login using your facebook user name and password." class='btn btn-large btn-success' onclick="window.location = ('<%= user_session_path %>');">
     <table>
       <tbody>
       <tr>
-        <td><%= image_tag 'facebook-logo-white-blue.png' %></td>
-        <td><h1 class="text_white">Login with facebook</h1></td>
+        <td><%= image_tag 'mail-icon-white.png' %></td>
+        <td><span  ><h2 class="text_white">Login with Email</h2></span></td>
       </tr>
       </tbody>
     </table>
