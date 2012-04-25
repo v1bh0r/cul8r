@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 
+  after_create :welcome_email
+
   has_many :watch_list_movie_entries
   
   # Include default devise modules. Others available are:
@@ -9,6 +11,10 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me,:admin
+
+  def welcome_email
+    UserNotification.welcome(self).deliver
+  end
   
   def self.find_for_facebook_oauth(access_token, signed_in_resource=nil)
     data = access_token.extra.raw_info

@@ -37,4 +37,12 @@ Cul8r::Application.configure do
 
   FACEBOOK_APP_ID = '344919928902323'
   FACEBOOK_APP_SECRET = 'd1a79ba73ff79f571cd9b72f4771fb33'
+
+  Cul8r::Application.config.middleware.use ExceptionNotifier,
+                                           :email_prefix => "[Development] ",
+                                           :sender_address => %{"vibhor.mahajan@gmail.com" },
+                                           :exception_recipients => %w{vibhor.mahajan@gmail.com}
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
 end
