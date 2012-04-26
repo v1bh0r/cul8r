@@ -30,10 +30,10 @@
           <% if user_signed_in? %>
               <li>
                 <%= form_tag '', :method => :get, :class => 'navbar-search pull-left' do %>
-                    <%= text_field_tag 'q', '', {:class => 'search-query', :placeholder => "Search movies"} %>
+                    <%= text_field_tag 'q', params[:q], {:class => 'search-query', :placeholder => "Search movies"} %>
                 <% end %>
               </li>
-              <li><a href="#advanced search" class="top_nav_link_white">more search options</a></li>
+              <li><a href="#advanced search" class="top_nav_link_white">Advanced Search</a></li>
           <% end %>
         </ul>
 
