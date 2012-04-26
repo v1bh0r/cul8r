@@ -49,5 +49,6 @@ gem "badfruit"
 gem "mini_magick"
 gem 'newrelic_rpm'
 gem 'exception_notification'
+gem 'rack-rewrite'
 
 gem "mocha", :group => :test
