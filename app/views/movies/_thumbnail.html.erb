@@ -1,0 +1,2 @@
+<%= link_to image_tag(movie.poster_profile, :class => 'movie_thumbnail_picture', :title=> movie.name_and_year, :alt => movie.name), movie, 'data-toggle'=>"modal", 'data-target'=>"#movie_details" %>
+<h5 title="<%= movie.name_and_year %>"><%= movie.name.truncate(20) %></h5>
