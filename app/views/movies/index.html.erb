@@ -12,7 +12,7 @@
                 <div class="item">
                   <div class="row">
                     <div class='span4'>
-                      <%= link_to image_tag(movie.poster_original), movie, :title => movie.synopsis, 'data-toggle'=>"modal", 'data-target'=>"#movie_details" %>
+                      <%= link_to image_tag(movie.poster_original, :class=>'movie_poster_picture'), movie, :title => movie.synopsis, 'data-toggle'=>"modal", 'data-target'=>"#movie_details" %>
                     </div>
                   </div>
                   <div class="carousel-caption">
@@ -35,7 +35,7 @@
             <% @movies.each do |movie| %>
                 <li class="span2">
                   <div class="thumbnail thumbnail_center_align">
-                    <%= link_to image_tag(movie.poster_profile, :alt => ''), movie, 'data-toggle'=>"modal", 'data-target'=>"#movie_details" %>
+                    <%= link_to image_tag(movie.poster_profile, :class => 'movie_thumbnail_picture', :alt => movie.name), movie, 'data-toggle'=>"modal", 'data-target'=>"#movie_details" %>
                     <h5><%= movie.name %></h5>
                     <%= render :partial => 'movie_action_buttons', :locals => {:movie => movie, :button_size => 'btn-mini', :show_trailer => false} %>
                   </div>

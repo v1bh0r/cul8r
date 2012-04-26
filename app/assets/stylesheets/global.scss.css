@@ -28,3 +28,13 @@
 .btn {
     font-weight: bold;
 }
+
+.movie_thumbnail_picture {
+    width: 120px;
+    height: 180px;
+}
+
+.movie_poster_picture {
+    width: 300px;
+    height: 428px;
+}
