@@ -15,6 +15,7 @@
 
 .thumbnail_center_align {
     text-align: center;
+    position: relative;
 }
 
 .text_centered {

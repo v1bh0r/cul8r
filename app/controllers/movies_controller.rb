@@ -25,10 +25,11 @@ class MoviesController < ApplicationController
   end
 
   def un_cul8r
-    if current_user.watch_list_movie_entries.destroy(:movie_id => params[:movie_id])
-      render json: {}, :status => :ok, :content_type => :json
-    else
-      render json: 'Some problem occurred', :status => :bad_request, :content_type => :json
+    @id_to_remove = params[:dom_id]
+    @movie = WatchListMovieEntry.find_by_user_id_and_movie_id current_user.id, params[:movie_id]
+    @movie.destroy
+    respond_to do |format|
+      format.js { @movie = Movie.find params[:movie_id] }
     end
   end
 end
