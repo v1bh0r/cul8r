@@ -5,7 +5,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
       html, body {
-          background-image: url('/assets/background.jpg');
+          background: url('/assets/background.jpg') no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
       }
 
       body {
@@ -17,7 +21,7 @@
       }
 
       .container {
-          /*width: 960px; *//* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+          width: 960px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
       }
 
           /* The white background content wrapper */
