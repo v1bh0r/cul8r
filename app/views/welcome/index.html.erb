@@ -10,14 +10,5 @@
   Then cul8r was born and I shouted loud with glee!<br/>
   <br/>
   <%= render :partial => 'layouts/login_with_facebook' %> <br/> <br/>
-  <button title="Login using your facebook user name and password." class='btn btn-large btn-success' onclick="window.location = ('<%= user_session_path %>');">
-    <table>
-      <tbody>
-      <tr>
-        <td><%= image_tag 'mail-icon-white.png' %></td>
-        <td><span  ><h2 class="text_white">Login with Email</h2></span></td>
-      </tr>
-      </tbody>
-    </table>
-  </button>
+  <%= link_to 'Login using your Email', user_session_path, :class => 'btn btn-large btn-success' %>
 </p>
