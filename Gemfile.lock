@@ -70,6 +70,7 @@ GEM
       orm_adapter (~> 0.0.3)
       railties (~> 3.1)
       warden (~> 1.1.1)
+    dynamic_sitemaps (1.0.5)
     erubis (2.7.0)
     exception_notification (2.6.1)
       actionmailer (>= 3.0.4)
@@ -79,9 +80,9 @@ GEM
       addressable (~> 2.2)
       multipart-post (~> 1.1)
       rack (~> 1.1)
+    friendly_id (4.0.5)
     gritter (1.0.1)
     haml (3.1.4)
-    has_permalink (0.1.4)
     hashie (1.2.0)
     hike (1.2.1)
     hpricot (0.8.6)
@@ -216,9 +217,10 @@ PLATFORMS
 DEPENDENCIES
   badfruit
   coffee-rails (~> 3.2.1)
+  dynamic_sitemaps
   exception_notification
+  friendly_id
   gritter
-  has_permalink
   jquery-rails
   mini_magick
   mocha

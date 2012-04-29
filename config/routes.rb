@@ -1,5 +1,7 @@
 Cul8r::Application.routes.draw do
 
+  match 'sitemap.xml' => 'sitemaps#sitemap'
+
   resources :movies do
     get 'cul8r'
     delete 'un_cul8r'

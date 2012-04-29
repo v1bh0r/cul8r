@@ -7,7 +7,8 @@ gem 'rails', '3.2.2'
 
 gem 'sqlite3', :group => :development
 gem 'pg', :group => :production
-gem 'has_permalink'
+gem 'dynamic_sitemaps'
+gem 'friendly_id'
 
 
 # Gems used only for assets and not required

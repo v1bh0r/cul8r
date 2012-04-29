@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120429180357) do
+ActiveRecord::Schema.define(:version => 20120429195613) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -20,6 +20,17 @@ ActiveRecord::Schema.define(:version => 20120429180357) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "friendly_id_slugs", :force => true do |t|
+    t.string   "slug",                         :null => false
+    t.integer  "sluggable_id",                 :null => false
+    t.string   "sluggable_type", :limit => 40
+    t.datetime "created_at"
+  end
+
+  add_index "friendly_id_slugs", ["slug", "sluggable_type"], :name => "index_friendly_id_slugs_on_slug_and_sluggable_type", :unique => true
+  add_index "friendly_id_slugs", ["sluggable_id"], :name => "index_friendly_id_slugs_on_sluggable_id"
+  add_index "friendly_id_slugs", ["sluggable_type"], :name => "index_friendly_id_slugs_on_sluggable_type"
 
   create_table "movie_database_providers", :force => true do |t|
     t.string "name"
@@ -53,12 +64,14 @@ ActiveRecord::Schema.define(:version => 20120429180357) do
     t.date     "release_dates"
     t.boolean  "is_dvd_available"
     t.boolean  "suppressed",                 :default => false
+    t.string   "slug"
   end
 
   add_index "movies", ["md_ref_id"], :name => "index_movies_on_md_ref_id"
   add_index "movies", ["movie_database_provider_id"], :name => "idx_mov_provider"
   add_index "movies", ["name", "year"], :name => "index_movies_on_name_and_year"
   add_index "movies", ["name"], :name => "index_movies_on_name"
+  add_index "movies", ["slug"], :name => "index_movies_on_slug", :unique => true
   add_index "movies", ["year"], :name => "index_movies_on_year"
 
   create_table "rails_admin_histories", :force => true do |t|
