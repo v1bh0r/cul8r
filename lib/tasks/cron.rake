@@ -1,6 +1,6 @@
 desc "This task is called by the Heroku cron add-on"
 task :cron => :environment do
-  Movie.fetch_new_movies
+  Movie.fetch_new_data
   #if Time.now.hour % 4 == 0 # run every four hours
   #  puts "Updating feed..."
   #  NewsFeed.update

@@ -8,10 +8,11 @@ class Movie < ActiveRecord::Base
 
   serialize :abridged_cast, Array
 
-  def self.fetch_new_movies
+  def self.fetch_new_data
     #English movies
     mdb = RemoteMovieDatabase.new
     mdb.add_upcoming_movies
+    mdb.add_new_released_dvds
   end
 
   def name_and_year
