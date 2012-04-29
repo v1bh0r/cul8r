@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120422114546) do
+ActiveRecord::Schema.define(:version => 20120429162423) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(:version => 20120422114546) do
     t.string   "poster_original"
     t.text     "abridged_cast"
     t.date     "release_dates"
+    t.boolean  "is_dvd_available"
   end
 
   add_index "movies", ["md_ref_id"], :name => "index_movies_on_md_ref_id"

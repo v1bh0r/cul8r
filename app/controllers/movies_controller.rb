@@ -8,7 +8,7 @@ class MoviesController < ApplicationController
   def index
     @search_query = params[:q]
     conditions = @search_query.nil? ? nil : ["LOWER(name) like LOWER(?)", "%#{@search_query}%"]
-    @movies = Movie.all(:limit => 20, :order => 'id desc', :conditions => conditions)
+    @movies = Movie.all(:limit => 20, :order => 'release_dates desc, critics_score desc', :conditions => conditions)
 
   end
 
