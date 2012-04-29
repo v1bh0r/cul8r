@@ -1,0 +1,10 @@
+<div id="movie_details" class="modal fade"></div>
+<script type="text/javascript">
+    $(window).load(function () {
+        ($("a[data-toggle=modal]")).click(function () {
+            var target = $(this).attr('data-target');
+            var url = $(this).attr('href');
+            $(target).load(url);
+        });
+    });
+</script>

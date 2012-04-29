@@ -3,6 +3,7 @@ Cul8r::Application.routes.draw do
   resources :movies do
     get 'cul8r'
     delete 'un_cul8r'
+    get 'show_popup'
   end
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
