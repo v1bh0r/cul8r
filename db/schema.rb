@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120429162423) do
+ActiveRecord::Schema.define(:version => 20120429180357) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -36,8 +36,8 @@ ActiveRecord::Schema.define(:version => 20120429162423) do
     t.string   "image_url"
     t.string   "url"
     t.string   "trailer_url"
-    t.datetime "created_at",                                :null => false
-    t.datetime "updated_at",                                :null => false
+    t.datetime "created_at",                                    :null => false
+    t.datetime "updated_at",                                    :null => false
     t.integer  "year"
     t.text     "rotten_tomatoes_info"
     t.integer  "movie_database_provider_id", :default => 1
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(:version => 20120429162423) do
     t.text     "abridged_cast"
     t.date     "release_dates"
     t.boolean  "is_dvd_available"
+    t.boolean  "suppressed",                 :default => false
   end
 
   add_index "movies", ["md_ref_id"], :name => "index_movies_on_md_ref_id"

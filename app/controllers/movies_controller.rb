@@ -7,9 +7,18 @@ class MoviesController < ApplicationController
 
   def index
     @search_query = params[:q]
-    conditions = @search_query.nil? ? nil : ["LOWER(name) like LOWER(?)", "%#{@search_query}%"]
-    @movies = Movie.all(:limit => 20, :order => 'release_dates desc, critics_score desc', :conditions => conditions)
+    wl_ids = @movies_in_watch_list.collect { |movie| movie.id }
 
+    limit = 21
+    if @search_query.nil?
+      conditions = ['suppressed = ? AND id not in (?)', false, wl_ids]
+    else
+      limit = limit * 3
+      conditions = ["suppressed = ? and LOWER(name) like LOWER(?) and id not in (?)", false, "%#{@search_query}%", wl_ids]
+    end
+
+
+    @movies = Movie.all(:limit => limit, :order => 'critics_score desc, release_dates desc', :conditions => conditions)
   end
 
   def show

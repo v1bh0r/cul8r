@@ -57,10 +57,10 @@
 
       <% if current_user %>
           <div class="row-fluid">
-            <div class="span3 watch-list">
+            <div class="span2 watch-list">
               <%= render :partial => 'movies/watch_list' %>
             </div>
-            <div class="span9">
+            <div class="span10">
               <h2>  <%= yield(:page_header) %>  </h2>
               <%= yield %>
             </div>
