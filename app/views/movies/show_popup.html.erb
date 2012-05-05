@@ -5,7 +5,7 @@
     <h3><%= @movie.name_and_year %></h3>
   </div>
   <div class="modal-body">
-    <%= render :partial => 'movie_details', :locals => {:movie => @movie} %>
+    <%= render :partial => 'movie_details', :locals => {:movie => @movie, :content_size=>'span3'} %>
   </div>
 </div>
 

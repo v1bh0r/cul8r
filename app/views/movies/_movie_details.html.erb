@@ -1,12 +1,12 @@
 <p>
 
 <div class="row">
-  <div class='span3 '>
+  <div class='span3'>
     <%= image_tag(movie.poster_detailed) %>
     <br/>
     <%= render :partial => 'movie_action_buttons', :locals => {:movie => movie, :button_size => 'btn-large', :show_trailer => true} %>
   </div>
-  <div class='span3'>
+  <div class="<%= content_size %>">
     <% if movie.critics_rating %>
         <span class="label label-info">Verdict: <%= movie.critics_rating %></span>
         <span class="label label-info">Rating: <%= movie.critics_score %>/100</span>
