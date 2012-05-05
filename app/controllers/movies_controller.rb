@@ -18,7 +18,7 @@ class MoviesController < ApplicationController
     end
 
 
-    @movies = Movie.all(:limit => limit, :order => 'critics_score desc, release_dates desc', :conditions => conditions)
+    @movies = Movie.all(:limit => limit, :order => 'release_dates desc', :conditions => conditions)
   end
 
   def show

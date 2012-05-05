@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c202b337-9a73-4e26-a868-394242d226dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/movies/index.html.erb" afterPath="$PROJECT_DIR$/app/views/movies/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/movies_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
     </list>
     <ignored path="cul8r.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="63" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.37869823">
+            <state line="30" column="63" selection-start="1408" selection-end="1408" vertical-scroll-proportion="-5.3333335">
               <folding>
                 <marker date="1336196632000" expanded="true" signature="208:1311" placeholder="do ... end" />
                 <marker date="1336196632000" expanded="true" signature="363:1031" placeholder="for ... end" />
@@ -102,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movies_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="movies_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/movies_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="56" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0">
+            <state line="20" column="99" selection-start="685" selection-end="685" vertical-scroll-proportion="0.5801105">
               <folding />
             </state>
           </provider>
@@ -144,7 +143,6 @@
         <option value="$PROJECT_DIR$/public/robots.txt" />
         <option value="$PROJECT_DIR$/config/initializers/sitemap.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120429194621_add_slug_to_movies.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/movie.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -153,6 +151,7 @@
         <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/movies/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
       </list>
     </option>
   </component>
@@ -1028,13 +1027,6 @@
         <state line="9" column="7" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/movies_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="56" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="0" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0">
@@ -1072,13 +1064,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="63" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.37869823">
+        <state line="30" column="63" selection-start="1408" selection-end="1408" vertical-scroll-proportion="-5.3333335">
           <folding>
             <marker date="1336196632000" expanded="true" signature="208:1311" placeholder="do ... end" />
             <marker date="1336196632000" expanded="true" signature="363:1031" placeholder="for ... end" />
             <marker date="1336196632000" expanded="true" signature="1408:1959" placeholder="do ... end" />
             <marker date="1336196632000" expanded="true" signature="1507:1925" placeholder="do ... end" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/movies_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="99" selection-start="685" selection-end="685" vertical-scroll-proportion="0.5801105">
+          <folding />
         </state>
       </provider>
     </entry>
