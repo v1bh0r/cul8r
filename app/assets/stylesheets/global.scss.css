@@ -3,10 +3,13 @@
     text-align: center;
 }
 
-.watch-list {
-    border-right: solid thin #d3d3d3;
+.inner_content {
     height: 550px;
     overflow-y: auto;
+}
+
+.watch-list {
+    border-right: solid thin #d3d3d3;
 }
 
 .top_nav_link_white {
@@ -33,9 +36,4 @@
 .movie_thumbnail_picture {
     width: 110px;
     height: 160px;
-}
-
-.movie_poster_picture {
-    width: 300px;
-    height: 428px;
 }
