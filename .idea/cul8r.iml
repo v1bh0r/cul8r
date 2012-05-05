@@ -54,7 +54,6 @@
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v2.0.1, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.6.5, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari (v0.13.0, RVM: ruby-1.9.3-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="libv8 (v3.3.10.4, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.4.3, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="metaclass (v0.0.1, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.17.2, RVM: ruby-1.9.3-p0) [gem]" level="application" />
@@ -96,7 +95,6 @@
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.1.2, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.6, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="subexec (v0.2.2, RVM: ruby-1.9.3-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="therubyracer (v0.9.9, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thesilverspoon (v1.0.0, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.14.6, RVM: ruby-1.9.3-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.3.3, RVM: ruby-1.9.3-p0) [gem]" level="application" />
