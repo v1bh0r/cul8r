@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c202b337-9a73-4e26-a868-394242d226dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ru" afterPath="$PROJECT_DIR$/config.ru" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
     </list>
     <ignored path="cul8r.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,19 +33,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="2" selection-start="506" selection-end="506" vertical-scroll-proportion="0.2877907">
+            <state line="23" column="15" selection-start="773" selection-end="773" vertical-scroll-proportion="-7.548387">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="welcome_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="welcome_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="20" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
+            <state line="3" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.12">
               <folding />
             </state>
           </provider>
@@ -144,10 +143,10 @@
         <option value="$PROJECT_DIR$/app/models/movie.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/movies/index.html.erb" />
         <option value="$PROJECT_DIR$/config.ru" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
       </list>
     </option>
   </component>
@@ -878,9 +877,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32937685" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32937685" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34472048" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33658537" sideWeight="0.6706231" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3249258" sideWeight="0.70731705" order="6" side_tool="false" content_ui="tabs" />
@@ -1020,13 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="20" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="21" selection-start="1440" selection-end="1440" vertical-scroll-proportion="-11.208333">
@@ -1043,7 +1035,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="2" selection-start="506" selection-end="506" vertical-scroll-proportion="0.2877907">
+        <state line="23" column="15" selection-start="773" selection-end="773" vertical-scroll-proportion="-7.548387">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.12">
           <folding />
         </state>
       </provider>

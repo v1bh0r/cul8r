@@ -2,8 +2,6 @@ class WelcomeController < ApplicationController
   skip_before_filter :authenticate_user!, :only => :index
   before_filter :goto_main_page_if_logged_in
 
-  caches_page :index
-  
   def index
   end
   
