@@ -11,6 +11,8 @@ Cul8r::Application.routes.draw do
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   get "welcome/index"
+  get "welcome/about"
+  get "welcome/contact"
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 

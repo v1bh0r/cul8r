@@ -23,10 +23,8 @@
   <div class="navbar navbar-fixed-top" style="z-index: 999999999">
     <div class="navbar-inner" style="z-index: 999999999">
       <div class="container">
-        <a class="brand" href="/">cul8r &lt;3</a>
+        <a class="brand" href="/">CU l8r &lt;3</a>
         <ul class="nav">
-          <li><a href="#about" class="top_nav_link_white">About</a></li>
-          <li><a href="#contact" class="top_nav_link_white">Contact us</a></li>
           <% if user_signed_in? %>
               <li>
                 <%= form_tag '', :method => :get, :class => 'navbar-search pull-left' do %>
@@ -37,14 +35,23 @@
           <% end %>
         </ul>
 
-        <% if user_signed_in? %>
-            <div class="pull-right" style="margin-top: 10px;color:white;">
-              <%= current_user.email %>
-              <span class="nav_link">
-              | <%= link_to "Sign out", destroy_user_session_path, :method => :delete, :style => "color:white;" %>
-            	</span>
-            </div>
-        <% end %>
+        <ul class="nav pull-right">
+          <li>
+            <%= link_to welcome_contact_path, :class => "top_nav_link_white" do %>
+              <i class="icon-pencil icon-white"></i> Contact Us
+            <% end %>
+          </li>
+          <% if user_signed_in? %>
+              <li>
+                <%= link_to destroy_user_session_path, :method => :delete, :class => "top_nav_link_white", :title=>'Logout' do %>
+                    <i class="icon-off icon-white"></i>
+                <% end %>
+
+              </li>
+          <% end %>
+        </ul>
+
+
       </div>
     </div>
   </div>
@@ -55,7 +62,7 @@
       <%= js add_gritter(flash[:notice], :image => :success, :title => "Notice", :sticky => false, :time => 2000) %>
       <%= js add_gritter(flash[:alert], :image => :warning, :title => "Alert!", :sticky => false, :time => 5000) %>
 
-      <% if current_user %>
+      <% if controller.controller_name == 'movies' %>
           <div class="row-fluid">
             <div class="span2 watch-list inner_content">
               <%= render :partial => 'movies/watch_list' %>
