@@ -1,6 +1,6 @@
 <% wl_id = "wl_#{watch_list_item.id}" %>
 <% remove_button_id = "remove_#{wl_id}" %>
-<li class="span2" id="<%= wl_id %>">
+<li id="<%= wl_id %>">
     <div class="thumbnail thumbnail_center_align" onmouseover="$('#<%= remove_button_id %>').show()" onmouseout="$('#<%= remove_button_id %>').hide()">
         <%= link_to movie_un_cul8r_path(:movie_id=>watch_list_item.id,:dom_id=>wl_id), :method => :delete, :remote =>
         true, :title => "Remove from your watch list", :class => "text-white btn btn-mini floating_button", :style=>'display:none',

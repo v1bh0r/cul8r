@@ -1,58 +1,24 @@
-<%= javascript_include_tag 'bootstrap-carousel', 'bootstrap-transition' %>
-
 <% title 'Movies' %>
 
 <% unless @movies.empty? %>
     <div class="row">
-      <% if params[:q].nil? %>
-          <div class='span4'>
-            <div id="latest-movies" class="carousel">
-              <!-- Carousel items -->
-              <div class="carousel-inner">
-                <% for movie in @movies.first(5) %>
-                    <div class="item">
-                      <div class="row">
-                        <div class='span4'>
-                          <%= link_to image_tag(movie.poster_original, :class => 'movie_poster_picture'), movie_show_popup_path(movie), :title => movie.overview, 'data-toggle' => "modal", 'data-target' => "#movie_details", :onclick => "$('#movie_details').html('');" %>
-                        </div>
-                      </div>
-                      <div class="carousel-caption">
-                        <h4><%= movie.name %></h4>
-                      </div>
-                    </div>
-                <% end %>
-              </div>
-              <!-- Carousel nav -->
-              <a class="carousel-control left" href="#latest-movies" data-slide="prev">&lsaquo;</a>
-              <a class="carousel-control right" href="#latest-movies" data-slide="next">&rsaquo;</a>
-            </div>
-          </div>
-      <% end %>
-      <div class='<%= params[:q].nil? ? 'span7' : 'span11' %>'>
-        <div class="movie_gallery">
-          <ul class="thumbnails">
-            <% @movies.each do |movie| %>
-                <li class="span2">
-                  <div class="thumbnail thumbnail_center_align">
-                    <%= render :partial => 'thumbnail', :locals => {:movie => movie} %>
-                    <%= render :partial => 'movie_action_buttons', :locals => {:movie => movie, :button_size => 'btn-mini', :show_trailer => false} %>
-                  </div>
-                </li>
-            <% end %>
-          </ul>
-        </div>
+      <div class="movie_gallery span11">
+        <ul class="thumbnails">
+          <% @movies.each do |movie| %>
+              <li>
+                <div class="thumbnail thumbnail_center_align">
+                  <%= render :partial => 'thumbnail', :locals => {:movie => movie} %>
+                  <%= render :partial => 'movie_action_buttons', :locals => {:movie => movie, :button_size => 'btn-mini', :show_trailer => false} %>
+                </div>
+              </li>
+          <% end %>
+        </ul>
       </div>
     </div>
 
     <script type="text/javascript">
         $(window).load(function () {
-            $($('.carousel-inner .item')[0]).addClass('active');
-            $('.carousel').carousel({
-                interval:10000
-            });
-
             $('#latest-movies').show();
-
         });
     </script>
     <%= render :partial => 'popup_javascript' %>
