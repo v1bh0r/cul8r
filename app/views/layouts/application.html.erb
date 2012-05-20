@@ -19,6 +19,30 @@
   <%= yield(:head) %>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '<%= FACEBOOK_APP_ID %>', // App ID
+            channelUrl : '//www.cul8r.me/channel.html', // Channel File
+            status     : true, // check login status
+            cookie     : true, // enable cookies to allow the server to access the session
+            xfbml      : true  // parse XFBML
+        });
+
+        // Additional initialization code here
+    };
+
+    // Load the SDK Asynchronously
+    (function(d){
+        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement('script'); js.id = id; js.async = true;
+        js.src = "//connect.facebook.net/en_US/all.js";
+        ref.parentNode.insertBefore(js, ref);
+    }(document));
+</script>
+
 <div id="wrapper">
   <div class="navbar navbar-fixed-top" style="z-index: 999999999">
     <div class="navbar-inner" style="z-index: 999999999">
@@ -38,12 +62,12 @@
         <ul class="nav pull-right">
           <li>
             <%= link_to welcome_contact_path, :class => "top_nav_link_white" do %>
-              <i class="icon-pencil icon-white"></i> Contact Us
+                <i class="icon-pencil icon-white"></i> Contact Us
             <% end %>
           </li>
           <% if user_signed_in? %>
               <li>
-                <%= link_to destroy_user_session_path, :method => :delete, :class => "top_nav_link_white", :title=>'Logout' do %>
+                <%= link_to destroy_user_session_path, :method => :delete, :class => "top_nav_link_white", :title => 'Logout' do %>
                     <i class="icon-off icon-white"></i>
                 <% end %>
 
@@ -56,7 +80,6 @@
     </div>
   </div>
   <div class="container">
-
     <div class="content">
       <%= js extend_gritter :position => :bottom_right %>
       <%= js add_gritter(flash[:notice], :image => :success, :title => "Notice", :sticky => false, :time => 2000) %>

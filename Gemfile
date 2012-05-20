@@ -9,6 +9,8 @@ gem 'sqlite3', :group => :development
 gem 'pg', :group => :production
 gem 'dynamic_sitemaps'
 gem 'friendly_id'
+gem 'mail_form'
+gem 'formtastic'
 
 # Gems used only for assets and not required
 # in production environments by default.
