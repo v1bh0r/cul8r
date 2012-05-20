@@ -1,6 +1,6 @@
 Cul8r::Application.routes.draw do
 
-  match 'sitemap.xml' => 'sitemaps#sitemap'
+  match 'sitemap.xml' => 'cul8r_sitemaps#sitemap'
 
   resources :movies do
     get 'cul8r'
