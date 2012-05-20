@@ -15,6 +15,8 @@ jquery-pageslide/examples/_secondary.html: jquery-pageslide/examples/_secondary-
 jquery-pageslide/examples/basic.html: jquery-pageslide/examples/basic-cbc96d39c7cf60a638ade122b144e643.html
 jquery-pageslide/examples/menu.png: jquery-pageslide/examples/menu-6cb47a93c297588210a0d43955f16a7c.png
 jquery-pageslide/examples/responsive.html: jquery-pageslide/examples/responsive-39230c3ccfde27ebdf0b893ec9da8cd5.html
+jquery-pageslide/jquery.pageslide.css: jquery-pageslide/jquery.pageslide-8a109aed6b74cba62be39eb844d66a41.css
+jquery-pageslide/jquery.pageslide.js: jquery-pageslide/jquery.pageslide-d9305a1961faea8e9088a04841916991.js
 application.css: application-14a5e89f1086ee5a448254ac724722bb.css
 bootstrap.css: bootstrap-652cd14f731c681f8e50ba0c07c572cc.css
 exclusions/images/Sorting icons.psd: exclusions/images/Sorting icons-e89db69da43f25b3746d4376c5f4bbd9.psd
