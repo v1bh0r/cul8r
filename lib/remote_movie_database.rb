@@ -43,5 +43,15 @@ class RemoteMovieDatabase
         :release_dates => Date.parse(info['release_dates']['theater']),
         :is_dvd_available => dvd_released)
 
+    attach_elaborate_info this_movie
+  end
+
+  def attach_elaborate_info movie
+    elaborate_info = @rotten_tomatoes.movies.search_by_id movie.md_ref_id
+    genre_names = elaborate_info.genres
+    genres = genre_names.collect { |genre_name| Genre.find_or_create_by_name genre_name }
+    existing_genres = movie.genres
+    genres_to_add = genres - existing_genres
+    movie.genres << genres_to_add
   end
 end

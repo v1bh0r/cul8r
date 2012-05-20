@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120429195613) do
+ActiveRecord::Schema.define(:version => 20120520155951) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -31,6 +31,11 @@ ActiveRecord::Schema.define(:version => 20120429195613) do
   add_index "friendly_id_slugs", ["slug", "sluggable_type"], :name => "index_friendly_id_slugs_on_slug_and_sluggable_type", :unique => true
   add_index "friendly_id_slugs", ["sluggable_id"], :name => "index_friendly_id_slugs_on_sluggable_id"
   add_index "friendly_id_slugs", ["sluggable_type"], :name => "index_friendly_id_slugs_on_sluggable_type"
+
+  create_table "genres", :force => true do |t|
+    t.string  "name"
+    t.integer "rank", :default => 1
+  end
 
   create_table "movie_database_providers", :force => true do |t|
     t.string "name"
@@ -73,6 +78,15 @@ ActiveRecord::Schema.define(:version => 20120429195613) do
   add_index "movies", ["name"], :name => "index_movies_on_name"
   add_index "movies", ["slug"], :name => "index_movies_on_slug", :unique => true
   add_index "movies", ["year"], :name => "index_movies_on_year"
+
+  create_table "movies_genres", :force => true do |t|
+    t.integer "movie_id"
+    t.integer "genre_id"
+  end
+
+  add_index "movies_genres", ["genre_id"], :name => "index_movies_genres_on_genre_id"
+  add_index "movies_genres", ["movie_id", "genre_id"], :name => "index_movies_genres_on_movie_id_and_genre_id", :unique => true
+  add_index "movies_genres", ["movie_id"], :name => "index_movies_genres_on_movie_id"
 
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
