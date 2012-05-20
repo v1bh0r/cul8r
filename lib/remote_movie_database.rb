@@ -54,6 +54,6 @@ class RemoteMovieDatabase
     genres_to_add = genres - existing_genres
     movie.genres << genres_to_add
   rescue Exception => e
-    logger.debug e.inspect
+    #do nothing
   end
 end
