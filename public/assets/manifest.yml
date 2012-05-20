@@ -16,6 +16,7 @@ jquery-pageslide/examples/basic.html: jquery-pageslide/examples/basic-cbc96d39c7
 jquery-pageslide/examples/menu.png: jquery-pageslide/examples/menu-6cb47a93c297588210a0d43955f16a7c.png
 jquery-pageslide/examples/responsive.html: jquery-pageslide/examples/responsive-39230c3ccfde27ebdf0b893ec9da8cd5.html
 application.css: application-14a5e89f1086ee5a448254ac724722bb.css
+bootstrap.css: bootstrap-652cd14f731c681f8e50ba0c07c572cc.css
 exclusions/images/Sorting icons.psd: exclusions/images/Sorting icons-e89db69da43f25b3746d4376c5f4bbd9.psd
 exclusions/images/back_disabled.jpg: exclusions/images/back_disabled-d2c58b4d69b471edd0fffc0d60926988.jpg
 exclusions/images/back_enabled.jpg: exclusions/images/back_enabled-b8b7aeacc7956578a3d40c3636688ce6.jpg
@@ -108,3 +109,5 @@ notice.png: notice-9a23ae95e9d6fc20e59b5b5628d735d9.png
 progress.gif: progress-3e030274097175e003f74f14e2e38d9d.gif
 success.png: success-f287fe203702126ca0a789b6cf231829.png
 warning.png: warning-80aa2445349881e8c8d65419c1a60131.png
+gritter.js: gritter-e6b1e739f00475ae8738e370474032f6.js
+gritter.css: gritter-cd978bef143c76f7e7edc1d98ecf966a.css
