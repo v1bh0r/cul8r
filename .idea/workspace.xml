@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c202b337-9a73-4e26-a868-394242d226dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/movie.rb" afterPath="$PROJECT_DIR$/app/models/movie.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20120520155805_create_genres.rb" afterPath="$PROJECT_DIR$/db/migrate/20120520155805_create_genres.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/remote_movie_database.rb" afterPath="$PROJECT_DIR$/lib/remote_movie_database.rb" />
     </list>
     <ignored path="cul8r.iws" />
@@ -42,7 +42,7 @@
       <file leaf-file-name="remote_movie_database.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/remote_movie_database.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="41" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.76">
+            <state line="56" column="26" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.88">
               <folding />
             </state>
           </provider>
@@ -51,7 +51,7 @@
       <file leaf-file-name="20120520155805_create_genres.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20120520155805_create_genres.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="11" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+            <state line="7" column="28" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -60,7 +60,7 @@
       <file leaf-file-name="20120520155951_create_movies_genres.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/migrate/20120520155951_create_movies_genres.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="31" selection-start="82" selection-end="95" vertical-scroll-proportion="0.0">
+            <state line="11" column="33" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,7 +69,7 @@
       <file leaf-file-name="movies_genre.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/movies_genre.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="57" selection-start="79" selection-end="136" vertical-scroll-proportion="0.0">
+            <state line="5" column="52" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,12 +146,12 @@
         <option value="$PROJECT_DIR$/app/views/movies/show_popup.html.erb" />
         <option value="$PROJECT_DIR$/app/views/movies/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20120520155805_create_genres.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20120520155951_create_movies_genres.rb" />
         <option value="$PROJECT_DIR$/app/models/movies_genres.rb" />
         <option value="$PROJECT_DIR$/app/models/genre.rb" />
         <option value="$PROJECT_DIR$/app/models/movie.rb" />
         <option value="$PROJECT_DIR$/app/models/movies_genre.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20120520155805_create_genres.rb" />
         <option value="$PROJECT_DIR$/lib/remote_movie_database.rb" />
       </list>
     </option>
@@ -921,23 +921,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20120520155805_create_genres.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="11" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p0/gems/activerecord-3.2.2/lib/active_record/validations/uniqueness.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="21" selection-start="2791" selection-end="2800" vertical-scroll-proportion="-6.096774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20120520155951_create_movies_genres.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="31" selection-start="82" selection-end="95" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -956,16 +942,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120520155805_create_genres.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="28" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/movies_genre.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="57" selection-start="79" selection-end="136" vertical-scroll-proportion="0.0">
+        <state line="5" column="52" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20120520155951_create_movies_genres.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="33" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/remote_movie_database.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="41" selection-start="1728" selection-end="1728" vertical-scroll-proportion="0.76">
+        <state line="56" column="26" selection-start="1983" selection-end="1983" vertical-scroll-proportion="0.88">
           <folding />
         </state>
       </provider>

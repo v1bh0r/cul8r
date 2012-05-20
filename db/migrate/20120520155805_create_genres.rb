@@ -4,5 +4,7 @@ class CreateGenres < ActiveRecord::Migration
       t.string :name
       t.integer :rank, :default=> 1
     end
+
+    add_index :genres, :name
   end
 end
