@@ -82,4 +82,6 @@ Cul8r::Application.configure do
       :domain         => 'cul8r.me'
   }
   ActionMailer::Base.delivery_method = :smtp
+  
+  APP_DOMAIN = 'www.cul8r.me'
 end
