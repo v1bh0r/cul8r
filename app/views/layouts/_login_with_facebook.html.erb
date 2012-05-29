@@ -1,10 +1,15 @@
-<button title="You will be redirected to facebook for authentication" class='btn btn-large btn-primary' onclick="window.location = ('<%= user_omniauth_authorize_path(:facebook) %>');">
-  <table>
-    <tbody>
-    <tr>
-      <td><%= image_tag 'facebook-logo-white-blue.png' %></td>
-      <td><h1 class="text_white">Login with facebook</h1></td>
-    </tr>
-    </tbody>
-  </table>
-</button>
+<div>
+  <button title="You will be redirected to facebook for authentication" class='btn btn-large btn-primary' onclick="window.location = ('<%= user_omniauth_authorize_path(:facebook) %>');">
+    <table>
+      <tbody>
+      <tr>
+        <td><%= image_tag 'facebook-logo-white-blue.png' %></td>
+        <td><h1 class="text_white">Login with facebook</h1></td>
+      </tr>
+      </tbody>
+    </table>
+  </button>
+  <div>
+    *We would never post anything to your wall without permission or to spam your friends*
+  </div>
+</div>
