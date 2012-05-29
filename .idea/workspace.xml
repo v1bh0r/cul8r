@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c202b337-9a73-4e26-a868-394242d226dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_login_with_facebook.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_login_with_facebook.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/contact.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/contact.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
     </list>
     <ignored path="cul8r.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +68,7 @@
       <file leaf-file-name="_login_with_facebook.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_login_with_facebook.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="90" selection-start="510" selection-end="510" vertical-scroll-proportion="0.5217391">
+            <state line="12" column="94" selection-start="514" selection-end="514" vertical-scroll-proportion="0.5217391">
               <folding />
             </state>
           </provider>
@@ -1031,7 +1026,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_login_with_facebook.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="90" selection-start="510" selection-end="510" vertical-scroll-proportion="0.5217391">
+        <state line="12" column="94" selection-start="514" selection-end="514" vertical-scroll-proportion="0.5217391">
           <folding />
         </state>
       </provider>
