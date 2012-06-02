@@ -1,15 +1,6 @@
 <% @genres.each do |genre| %>
     <div style="overflow-x: auto">
-      <div id="<%= genre.name %>" class="genre-name"><span style="line-height: 2em;"><%= genre.name %></span></div>
-      <ul class="thumbnails">
-        <% genre.featured_movies.each do |movie| %>
-            <li>
-              <div class="thumbnail thumbnail_center_align">
-                <%= render :partial => 'thumbnail', :locals => {:movie => movie} %>
-                <%= render :partial => 'movie_action_buttons', :locals => {:movie => movie, :button_size => 'btn-mini', :show_trailer => false} %>
-              </div>
-            </li>
-        <% end %>
-      </ul>
+      <div id="<%= genre.name %>"><h3><%= genre.name %></h3></div>
+        <%= render :partial => 'thumbnails', :locals => {:movies => genre.featured_movies} %>
     </div>
 <% end %>
