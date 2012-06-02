@@ -3,15 +3,17 @@
 <div class="row">
   <div class="movie_gallery span11 inner_content">
     <div id="latest-movies" class="pull-left featured_column">
-        <h3 style="text-align: center">Added Recently</h3>
+      <h3 style="text-align: center">Added Recently</h3>
       <%= render :partial => 'thumbnails', :locals => {:movies => @latest_movies} %>
     </div>
     <div id="featured-movies" class="pull-right featured_column">
       <h3 style="text-align: center">Popular</h3>
       <%= render :partial => 'thumbnails', :locals => {:movies => @recommended_movies} %>
     </div>
-    <div style="line-height: 2em;text-align: center"><%= render :partial => 'genre_link', :collection => @genres %></div>
-    <%= render :partial => 'genre_movies_showcase' %>
+    <div style="width:98%">
+      <div style="line-height: 2em;text-align: center"><%= render :partial => 'genre_link', :collection => @genres %></div>
+      <%= render :partial => 'genre_movies_showcase' %>
+    </div>
   </div>
 </div>
 
