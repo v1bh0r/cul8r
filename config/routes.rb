@@ -13,6 +13,7 @@ Cul8r::Application.routes.draw do
   get "welcome/index"
   get "welcome/about"
   get "welcome/contact"
+  post "welcome/contact"
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
