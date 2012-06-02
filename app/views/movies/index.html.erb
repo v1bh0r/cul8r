@@ -1,31 +1,15 @@
 <% title 'Movies' %>
 
-<% unless @movies.empty? %>
-    <div class="row">
-      <div class="movie_gallery span11 inner_content">
-        <ul class="thumbnails">
-          <% @movies.each do |movie| %>
-              <li>
-                <div class="thumbnail thumbnail_center_align">
-                  <%= render :partial => 'thumbnail', :locals => {:movie => movie} %>
-                  <%= render :partial => 'movie_action_buttons', :locals => {:movie => movie, :button_size => 'btn-mini', :show_trailer => false} %>
-                </div>
-              </li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
+<div class="row">
+  <div class="movie_gallery span11 inner_content">
+    <div style="line-height: 2em;text-align: center"><%= render :partial => 'genre_link', :collection => @genres %></div>
+    <%= render :partial => 'genre_movies_showcase' %>
+  </div>
+</div>
 
-    <script type="text/javascript">
-        $(window).load(function () {
-            $('#latest-movies').show();
-        });
-    </script>
-    <%= render :partial => 'popup_javascript' %>
-<% else %>
-    <div class="alert alert-info">
-      <h4 class="alert-heading"><%= @search_query %></h4>
-      No movies matched this name. Please try again.
-    </div>
-
-<% end %>
+<script type="text/javascript">
+    $(window).load(function () {
+        $('#latest-movies').show();
+    });
+</script>
+<%= render :partial => 'popup_javascript' %>

@@ -1,0 +1,27 @@
+<a class="brand" href="/">CU l8r &lt;3</a>
+<!--
+<ul class="nav">
+  <% if user_signed_in? %>
+      <li>
+        <%= form_tag '', :method => :get, :class => 'navbar-search pull-left' do %>
+            <%= text_field_tag 'q', params[:q], {:class => 'search-query', :placeholder => "Search movies"} %>
+        <% end %>
+      </li>
+  <% end %>
+</ul>
+      -->
+<ul class="nav pull-right">
+  <li>
+    <%= link_to welcome_contact_path, :class => "top_nav_link_white" do %>
+        <i class="icon-pencil icon-white"></i> Contact Us
+    <% end %>
+  </li>
+  <% if user_signed_in? %>
+      <li>
+        <%= link_to destroy_user_session_path, :method => :delete, :class => "top_nav_link_white", :title => 'Logout' do %>
+            <i class="icon-off icon-white"></i>
+        <% end %>
+
+      </li>
+  <% end %>
+</ul>
