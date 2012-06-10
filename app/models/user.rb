@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
 
   has_many :watch_list_movie_entries
 
+  has_many :notifications, :dependent => :destroy
+
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,

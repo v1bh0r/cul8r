@@ -1,13 +1,7 @@
 class MoviesController < ApplicationController
-  before_filter :fetch_watch_list, :only => [:index, :show]
-
-  def fetch_watch_list
-    @movies_in_watch_list = current_user.movies_in_watch_list
-  end
-
   def index
     @genres = Genre.all(:order => :rank)
-    @latest_movies = Movie.all(:order=>'created_at desc', :limit=>6)
+    @latest_movies = Movie.all(:order => 'created_at desc', :limit => 6)
     @recommended_movies = current_user.recommended_movies
   end
 
@@ -39,5 +33,9 @@ class MoviesController < ApplicationController
     respond_to do |format|
       format.js { @movie = Movie.find params[:movie_id] }
     end
+  end
+
+  def watch_list
+    @movies_in_watch_list = current_user.movies_in_watch_list
   end
 end

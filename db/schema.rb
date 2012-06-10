@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120520155951) do
+ActiveRecord::Schema.define(:version => 20120610103838) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -87,6 +87,16 @@ ActiveRecord::Schema.define(:version => 20120520155951) do
   add_index "movies_genres", ["genre_id"], :name => "index_movies_genres_on_genre_id"
   add_index "movies_genres", ["movie_id", "genre_id"], :name => "index_movies_genres_on_movie_id_and_genre_id", :unique => true
   add_index "movies_genres", ["movie_id"], :name => "index_movies_genres_on_movie_id"
+
+  create_table "notifications", :force => true do |t|
+    t.integer  "user_id"
+    t.text     "message"
+    t.boolean  "is_read",    :default => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+  end
+
+  add_index "notifications", ["user_id"], :name => "index_notifications_on_user_id"
 
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"

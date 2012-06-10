@@ -11,17 +11,27 @@
 </ul>
       -->
 <ul class="nav pull-right">
+
+  <% if user_signed_in? %>
+      <li>
+        <%= link_to '#', :class => "top_nav_link_white", :title => 'Notifications' do %>
+            <i class="icon-flag icon-white"></i> <%= unread_notifications_count %> notifications
+        <% end %>
+      </li>
+      <li>
+        <%= link_to  watch_list_path, :class => "top_nav_link_white" do %>
+            <i class="icon-heart icon-white"></i> Watch list
+        <% end %>
+      </li>
+      <li>
+        <%= link_to destroy_user_session_path, :method => :delete, :class => "top_nav_link_white" do %>
+            <i class="icon-off icon-white"></i> Logout
+        <% end %>
+      </li>
+  <% end %>
   <li>
     <%= link_to welcome_contact_path, :class => "top_nav_link_white" do %>
         <i class="icon-pencil icon-white"></i> Contact Us
     <% end %>
   </li>
-  <% if user_signed_in? %>
-      <li>
-        <%= link_to destroy_user_session_path, :method => :delete, :class => "top_nav_link_white", :title => 'Logout' do %>
-            <i class="icon-off icon-white"></i>
-        <% end %>
-
-      </li>
-  <% end %>
 </ul>

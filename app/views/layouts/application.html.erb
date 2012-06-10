@@ -39,20 +39,8 @@
       <%= js add_gritter(flash[:notice], :image => :success, :title => "Notice", :sticky => false, :time => 2000) %>
       <%= js add_gritter(flash[:alert], :image => :warning, :title => "Alert!", :sticky => false, :time => 5000) %>
 
-      <% if controller.controller_name == 'movies' %>
-          <div class="row-fluid">
-            <div class="span2 watch-list inner_content">
-              <%= render :partial => 'movies/watch_list' %>
-            </div>
-            <div class="span9">
-              <h2>  <%= yield(:page_header) %>  </h2>
-              <%= yield %>
-            </div>
-          </div>
-      <% else %>
-          <h2>  <%= yield(:page_header) %>  </h2>
-          <%= yield %>
-      <% end %>
+      <h2>  <%= yield(:page_header) %>  </h2>
+      <%= yield %>
 
       <div class='footer'>
         <%= render :partial => 'layouts/footer' %>
