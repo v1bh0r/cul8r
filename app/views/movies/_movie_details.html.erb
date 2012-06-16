@@ -3,8 +3,9 @@
 <div class="row-fluid">
   <div class='span3'>
     <%= image_tag(movie.poster_detailed) %>
-    <br/>
-    <%= render :partial => 'movie_action_buttons', :locals => {:movie => movie, :button_size => 'btn-large', :show_trailer => true} %>
+    <div style="margin-top:10px; text-align: center">
+      <%= render :partial => 'movie_action_buttons', :locals => {:movie => movie, :button_size => 'btn-large', :show_trailer => true} %>
+    </div>
   </div>
   <div class="<%= content_size %>">
     <% if movie.critics_rating %>

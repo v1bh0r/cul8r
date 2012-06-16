@@ -1,4 +1,3 @@
 <% title @movie.name_and_year %>
 <h3><%= @movie.name_and_year %></h3>
 <%= render :partial => 'movie_details', :locals => {:movie => @movie, :content_size=>'span9'} %>
-<%= render :partial => 'popup_javascript' %>

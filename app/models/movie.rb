@@ -12,6 +12,8 @@ class Movie < ActiveRecord::Base
   validates_presence_of :name, :year, :poster_original, :poster_detailed, :poster_profile, :poster_thumbnail
   has_many :watch_list_movie_entries, :dependent => :destroy
 
+  has_many :users, :through => :watch_list_movie_entries
+
   serialize :abridged_cast, Array
 
   def self.fetch_new_data

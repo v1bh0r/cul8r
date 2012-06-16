@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
   def index
     @genres = Genre.all(:order => :rank)
-    @latest_movies = Movie.all(:order => 'created_at desc', :limit => 6)
+    @latest_movies = Movie.all(:order => 'id desc', :limit => 6)
     @recommended_movies = current_user.recommended_movies
   end
 
