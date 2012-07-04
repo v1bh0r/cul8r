@@ -9,8 +9,11 @@
   </div>
   <div class="<%= content_size %>">
     <% if movie.critics_rating %>
-        <span class="label label-info">Verdict: <%= movie.critics_rating %></span> &nbsp;
+        <span class="label label-info">Verdict: <%= movie.critics_rating %></span>
         <span class="label label-info">Rating: <%= movie.critics_score %>/100</span>
+        <% if movie.release_dates? %>
+            <span class="label label-info">Release: <%= movie.release_dates %></span>
+        <% end %>
     <% end %>
     <p>
       <%= movie.synopsis %>

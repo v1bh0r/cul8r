@@ -52,6 +52,6 @@ class User < ActiveRecord::Base
   end
 
   def recommended_movies
-    Movie.all( :conditions => "critics_score > 70", :limit => 6, :order=>"release_dates desc")
+    Movie.all( :conditions => "critics_score > 70", :limit => 6)
   end
 end

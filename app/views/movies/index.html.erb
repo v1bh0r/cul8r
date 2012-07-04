@@ -3,14 +3,24 @@
 <div class="row-fluid">
   <div class="movie_gallery span12 inner_content">
     <div class="featured-content">
-      <div id="latest-movies" class="pull-left featured_column half-page">
-        <h3 style="text-align: center">Recent</h3>
-        <%= render :partial => 'thumbnails', :locals => {:movies => @latest_movies} %>
-      </div>
-      <div id="featured-movies" class="pull-right featured_column half-page">
-        <h3 style="text-align: center">Popular</h3>
-        <%= render :partial => 'thumbnails', :locals => {:movies => @recommended_movies} %>
-      </div>
+      <table>
+        <tbody>
+        <tr>
+          <td class="half-page">
+            <div id="latest-movies" class="pull-left featured_column">
+              <h3 style="text-align: center">Recent</h3>
+              <%= render :partial => 'thumbnails', :locals => {:movies => @latest_movies} %>
+            </div>
+          </td>
+          <td class="half-page">
+            <div id="featured-movies" class="pull-right featured_column">
+              <h3 style="text-align: center">Popular</h3>
+              <%= render :partial => 'thumbnails', :locals => {:movies => @recommended_movies} %>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
     </div>
     <div class="featured-content">
       <div id="genre-links"><%= render :partial => 'genre_link', :collection => @genres %></div>

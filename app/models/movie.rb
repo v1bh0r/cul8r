@@ -7,7 +7,7 @@ class Movie < ActiveRecord::Base
   extend FriendlyId
   friendly_id :name, use: :slugged
 
-  default_scope
+  default_scope :order => "release_dates desc"
   belongs_to :movie_database_provider
   validates_presence_of :name, :year, :poster_original, :poster_detailed, :poster_profile, :poster_thumbnail
   has_many :watch_list_movie_entries, :dependent => :destroy
