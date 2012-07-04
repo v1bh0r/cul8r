@@ -23,8 +23,4 @@ module LayoutHelper
   def unread_notifications_count
     current_user.notifications.count
   end
-
-  def watch_list_count
-    current_user.watch_list_movie_entries.count
-  end
 end

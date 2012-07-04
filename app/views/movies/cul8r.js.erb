@@ -1,6 +1,7 @@
 <% unless @errors %>
 $.gritter.add({image:'/assets/success.png', time:5000, title:' ', text:'<%= escape_javascript @movie.name%> has been added to your watch list.' });
 $('#watch_list ul').prepend('<%= escape_javascript(render(:partial => 'watch_list_item', :object => @movie)) %>');
+$('#watch_list_count').text('<%= @watch_list_count %>');
 <% else %>
 $.gritter.add({image:'/assets/warning.png', time:5000, title:' ', text:'<%= escape_javascript @errors%>' });
 <% end %>

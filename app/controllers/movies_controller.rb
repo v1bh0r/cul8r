@@ -16,6 +16,7 @@ class MoviesController < ApplicationController
 
   def cul8r
     entry = current_user.watch_list_movie_entries.create(:movie_id => params[:movie_id])
+    @watch_list_count = @watch_list_count + 1
     respond_to do |format|
       if entry.errors.messages.empty?
         #update the list
@@ -30,6 +31,7 @@ class MoviesController < ApplicationController
     @id_to_remove = params[:dom_id]
     @movie = WatchListMovieEntry.find_by_user_id_and_movie_id current_user.id, params[:movie_id]
     @movie.destroy
+    @watch_list_count = @watch_list_count - 1
     respond_to do |format|
       format.js { @movie = Movie.find params[:movie_id] }
     end

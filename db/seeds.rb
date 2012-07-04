@@ -7,3 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create!(:email=>'vibhor.mahajan@gmail.com',:password=>'secret',:password_confirmation=>'secret',:admin=>true)
+MovieDatabaseProvider.create!(:name => 'Manual Data Entry')
+MovieDatabaseProvider.create!(:name => 'Rotten Tomatoes')

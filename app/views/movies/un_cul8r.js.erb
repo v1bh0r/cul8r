@@ -1,2 +1,3 @@
 $('#<%= @id_to_remove %>').remove();
 $.gritter.add({image:'/assets/success.png', time:5000, title:' ', text:'You have removed <%= escape_javascript @movie.name%> from watch list' });
+$('#watch_list_count').text(<%= @watch_list_count %>);
