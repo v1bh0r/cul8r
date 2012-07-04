@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c202b337-9a73-4e26-a868-394242d226dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/movie.rb" afterPath="$PROJECT_DIR$/app/models/movie.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/movies/_movie_details.html.erb" afterPath="$PROJECT_DIR$/app/views/movies/_movie_details.html.erb" />
     </list>
     <ignored path="cul8r.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,19 +100,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="movie.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="movie.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="80" selection-start="276" selection-end="276" vertical-scroll-proportion="0.3933162">
+            <state line="9" column="80" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_movie_details.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_movie_details.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/movies/_movie_details.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="11" selection-start="353" selection-end="353" vertical-scroll-proportion="-6.5384617">
+            <state line="18" column="53" selection-start="744" selection-end="744" vertical-scroll-proportion="0.56198347">
               <folding />
             </state>
           </provider>
@@ -150,11 +150,11 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/movies/un_cul8r.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/movies/_movie_details.html.erb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/movies.css.scss" />
         <option value="$PROJECT_DIR$/app/views/movies/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/movie.rb" />
+        <option value="$PROJECT_DIR$/app/views/movies/_movie_details.html.erb" />
       </list>
     </option>
   </component>
@@ -1028,13 +1028,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/movies/_movie_details.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="353" selection-end="353" vertical-scroll-proportion="-6.5384617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="63" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.0">
@@ -1079,7 +1072,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="80" selection-start="276" selection-end="276" vertical-scroll-proportion="0.3933162">
+        <state line="9" column="80" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/movies/_movie_details.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="53" selection-start="744" selection-end="744" vertical-scroll-proportion="0.56198347">
           <folding />
         </state>
       </provider>

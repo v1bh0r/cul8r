@@ -8,13 +8,17 @@
     </div>
   </div>
   <div class="<%= content_size %>">
-    <% if movie.critics_rating %>
-        <span class="label label-info">Verdict: <%= movie.critics_rating %></span>
-        <span class="label label-info">Rating: <%= movie.critics_score %>/100</span>
-        <% if movie.release_dates? %>
-            <span class="label label-info">Release: <%= movie.release_dates %></span>
-        <% end %>
-    <% end %>
+    <p>
+      <% if movie.critics_rating? %>
+          <span class="label label-info">Verdict: <%= movie.critics_rating %></span>
+      <% end %>
+      <% if movie.critics_score? and movie.critics_score > 0 %>
+          <span class="label label-info">Rating: <%= movie.critics_score %>/100</span>
+      <% end %>
+      <% if movie.release_dates? %>
+          <span class="label label-info">Release date: <%= movie.release_dates %></span>
+      <% end %>
+    </p>
     <p>
       <%= movie.synopsis %>
     </p>
