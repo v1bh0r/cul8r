@@ -7,3 +7,5 @@ This is your Movies Bucket List
 * Discover new movies.
 * Know when they're playing in the theatres and out on DVD.
 * Group with friends who want to watch the same movies.
+
+{<img src="https://codeclimate.com/badge.png" />}[https://codeclimate.com/github/vibhor86/cul8r]
