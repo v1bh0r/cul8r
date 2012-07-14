@@ -34,4 +34,19 @@ Cul8r::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+  
+  FACEBOOK_APP_ID = '302259526486707'
+  FACEBOOK_APP_SECRET = '7d22746d6a98c6476752988d5f5c1872'
+
+  ActionMailer::Base.smtp_settings = {
+      :address        => 'smtp.sendgrid.net',
+      :port           => '587',
+      :authentication => :plain,
+      :user_name      => ENV['SENDGRID_USERNAME'],
+      :password       => ENV['SENDGRID_PASSWORD'],
+      :domain         => 'cul8r.me'
+  }
+  ActionMailer::Base.delivery_method = :smtp
+  
+  APP_DOMAIN = 'www.cul8r.me'
 end
