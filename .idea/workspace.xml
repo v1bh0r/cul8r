@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c202b337-9a73-4e26-a868-394242d226dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_footer.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/movies/index.html.erb" afterPath="$PROJECT_DIR$/app/views/movies/index.html.erb" />
     </list>
     <ignored path="cul8r.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,19 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="23" selection-start="1483" selection-end="1484" vertical-scroll-proportion="-12.423077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="-2.6153846">
+            <state line="22" column="108" selection-start="833" selection-end="833" vertical-scroll-proportion="-1.3461539">
               <folding />
             </state>
           </provider>
@@ -50,7 +40,7 @@
       <file leaf-file-name="_footer.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="11" selection-start="363" selection-end="363" vertical-scroll-proportion="0.53825855">
+            <state line="11" column="25" selection-start="323" selection-end="323" vertical-scroll-proportion="0.4934037">
               <folding />
             </state>
           </provider>
@@ -902,11 +892,6 @@
         <state line="25" column="0" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="108" selection-start="833" selection-end="833" vertical-scroll-proportion="-4.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@cul8r/gems/actionpack-3.2.2/lib/abstract_controller/callbacks.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="169" column="25" selection-start="5951" selection-end="5953" vertical-scroll-proportion="0.33236995" />
@@ -957,23 +942,30 @@
         <state line="54" column="63" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.7253142" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="23" selection-start="1483" selection-end="1484" vertical-scroll-proportion="-12.423077">
+        <state line="4" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="0.18579236">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/movies/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="97" selection-end="97" vertical-scroll-proportion="-2.6153846">
+        <state line="43" column="23" selection-start="1483" selection-end="1484" vertical-scroll-proportion="0.88251364">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="108" selection-start="833" selection-end="833" vertical-scroll-proportion="-1.3461539">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_footer.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="363" selection-end="363" vertical-scroll-proportion="0.53825855">
+        <state line="11" column="25" selection-start="323" selection-end="323" vertical-scroll-proportion="0.4934037">
           <folding />
         </state>
       </provider>
