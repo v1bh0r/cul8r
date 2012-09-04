@@ -43,7 +43,6 @@ Cul8r::Application.configure do
                                            :sender_address => %{"vibhor.mahajan@gmail.com" },
                                            :exception_recipients => %w{vibhor.mahajan@gmail.com}
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
+  config.action_mailer.delivery_method = :letter_opener
   APP_DOMAIN = 'localhost:3000'
 end

@@ -54,6 +54,8 @@
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v2.0.1, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="json (v1.6.5, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari (v0.13.0, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="launchy (v2.1.0, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="letter_opener (v0.0.2, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.4.3, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="metaclass (v0.0.1, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.17.2, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />

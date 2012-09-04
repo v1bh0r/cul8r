@@ -1,5 +1,9 @@
 Cul8r::Application.routes.draw do
 
+  get "email/unsubscribe"
+
+  get "email/view_online"
+
   match 'sitemap.xml' => 'cul8r_sitemaps#sitemap'
 
   resources :movies do
