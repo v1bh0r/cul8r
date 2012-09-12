@@ -1,13 +1,17 @@
-<%= link_to movie_cul8r_path(movie.id), :remote => true, :title => "Add to your Watch List", :class => "text-white btn #{button_size} btn-primary" do %>
+<%= link_to movie_cul8r_path(movie.id), :remote => true, :title => "Add to your Watch List", :class => "text-white btn btn-mini btn-primary" do %>
     <i class="icon-heart icon-white"></i>
 <% end %>
 <% unless show_trailer == false or movie.trailer_url.nil? %>
-    <button style="margin-top:5px" title="Opens trailer in a new window" class='btn <%= button_size -%> btn-primary' onclick="window.open('<%= movie.trailer_url %>');">
+    <button title="Opens trailer in a new window" class='btn btn-mini btn-primary' onclick="window.open('<%= movie.trailer_url %>');">
       <i class="icon-play icon-white"></i>
     </button>
 <% end %>
 <% if movie.release_dates < Date.today %>
-    <%= link_to "http://torrentz.eu/verifiedP?f=movies+#{CGI.escape(movie.name_and_year)}", :title => "Search for torrents", :class => "torrent-search-button text-white btn #{button_size} btn-primary", :target => '_blank' do %>
+    <%= link_to "http://torrentz.eu/verifiedP?f=movies+#{CGI.escape(movie.name_and_year)}",
+                :title => "Searches for torrents in a new window",
+                :class => "torrent-search-button text-white btn btn-mini btn-primary",
+                :target => '_blank' do %>
         <i class="icon-search icon-white"></i>
+        <i class="icon-download icon-white"></i>
     <% end %>
 <% end %>

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c202b337-9a73-4e26-a868-394242d226dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/cul8r.iml" afterPath="$PROJECT_DIR$/.idea/cul8r.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/global.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/movie.rb" afterPath="$PROJECT_DIR$/app/models/movie.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/movies/_movie_action_buttons.html.erb" afterPath="$PROJECT_DIR$/app/views/movies/_movie_action_buttons.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/movies/_thumbnail.html.erb" afterPath="$PROJECT_DIR$/app/views/movies/_thumbnail.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/movies/_thumbnails.html.erb" afterPath="$PROJECT_DIR$/app/views/movies/_thumbnails.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="cul8r.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,13 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_movie_action_buttons.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_movie_action_buttons.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/movies/_movie_action_buttons.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="54" selection-start="592" selection-end="598" vertical-scroll-proportion="-5.8846154">
-              <folding>
-                <element signature="e#278#300#0" expanded="true" />
-              </folding>
+            <state line="9" column="38" selection-start="542" selection-end="542" vertical-scroll-proportion="0.4214876">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_thumbnails.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/movies/_thumbnails.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="112" selection-start="311" selection-end="311" vertical-scroll-proportion="-3.2692308">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,16 +96,7 @@
       <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="29" selection-start="2709" selection-end="2722" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="20" selection-start="933" selection-end="933" vertical-scroll-proportion="-8.36">
+            <state line="68" column="29" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,10 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_thumbnail.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_thumbnail.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/movies/_thumbnail.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="58" selection-start="399" selection-end="399" vertical-scroll-proportion="0.3617021">
+            <state line="5" column="33" selection-start="214" selection-end="256" vertical-scroll-proportion="-3.2692308">
               <folding />
             </state>
           </provider>
@@ -147,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/mailers/user_notification.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/views/user_notification/welcome.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/user_notification.html.erb" />
@@ -159,10 +151,11 @@
         <option value="$PROJECT_DIR$/app/views/movies/torrents.js.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/movies.js.coffee" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/global.js" />
-        <option value="$PROJECT_DIR$/app/views/movies/_movie_action_buttons.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/movies_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/movie.rb" />
+        <option value="$PROJECT_DIR$/app/views/movies/_thumbnails.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/movies/_movie_action_buttons.html.erb" />
       </list>
     </option>
   </component>
@@ -505,33 +498,7 @@
       <recent name="$PROJECT_DIR$/app/assets/stylesheets/nivo-slider" />
     </key>
   </component>
-  <component name="RunManager" selected="IRB console.Rails console: cul8r">
-    <configuration default="false" name="assets:precompile" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
-      <module name="cul8r" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="production" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="assets:precompile" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="true" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Rake.db:migrate">
     <configuration default="false" name="assets:clean" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="cul8r" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -605,6 +572,32 @@
       <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/script/rails" />
       <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console" />
       <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="cul8r" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -869,16 +862,17 @@
       <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: cul8r" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: cul8r" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.assets:precompile" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.assets:clean" />
-      <item index="6" class="java.lang.String" itemvalue="Query Language Console.Default" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.cron" />
-      <item index="8" class="java.lang.String" itemvalue="IRB console.Rails console: cul8r" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.assets:clean" />
+      <item index="5" class="java.lang.String" itemvalue="Query Language Console.Default" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.cron" />
+      <item index="7" class="java.lang.String" itemvalue="IRB console.Rails console: cul8r" />
+      <item index="8" class="java.lang.String" itemvalue="Rake.db:migrate" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: cul8r" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
         <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: cul8r" />
+        <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: cul8r" />
       </list>
     </recent_temporary>
   </component>
@@ -1042,13 +1036,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/movies/_thumbnails.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="40" selection-start="239" selection-end="239" vertical-scroll-proportion="-3.2692308">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="20" selection-start="933" selection-end="933" vertical-scroll-proportion="-8.36">
@@ -1072,7 +1059,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="29" selection-start="2709" selection-end="2722" vertical-scroll-proportion="0.0">
+        <state line="68" column="29" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1088,15 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="0" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/movies/_movie_action_buttons.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="54" selection-start="592" selection-end="598" vertical-scroll-proportion="-5.8846154">
-          <folding>
-            <element signature="e#278#300#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1116,7 +1094,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/movies/_thumbnail.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="58" selection-start="399" selection-end="399" vertical-scroll-proportion="0.3617021">
+        <state line="5" column="33" selection-start="214" selection-end="256" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/movies/_thumbnails.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="112" selection-start="311" selection-end="311" vertical-scroll-proportion="-3.2692308">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/movies/_movie_action_buttons.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="38" selection-start="542" selection-end="542" vertical-scroll-proportion="0.4214876">
           <folding />
         </state>
       </provider>

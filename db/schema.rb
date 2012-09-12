@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120610103838) do
+ActiveRecord::Schema.define(:version => 20120902132611) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
@@ -94,6 +94,7 @@ ActiveRecord::Schema.define(:version => 20120610103838) do
     t.boolean  "is_read",    :default => false
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
+    t.string   "image_url"
   end
 
   add_index "notifications", ["user_id"], :name => "index_notifications_on_user_id"
@@ -111,6 +112,11 @@ ActiveRecord::Schema.define(:version => 20120610103838) do
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
+  create_table "sent_emails", :force => true do |t|
+    t.text     "content"
+    t.datetime "created_at"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
@@ -125,6 +131,7 @@ ActiveRecord::Schema.define(:version => 20120610103838) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.boolean  "admin"
+    t.datetime "unsubscribed_emails_at"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
