@@ -52,5 +52,6 @@ gem "badfruit"
 gem "mini_magick"
 gem 'newrelic_rpm'
 gem 'exception_notification'
+gem 'rest-client'
 
 gem "mocha", :group => :test

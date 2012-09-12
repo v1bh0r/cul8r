@@ -88,6 +88,7 @@
     <orderEntry type="library" scope="PROVIDED" name="redis-namespace (v1.0.3, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="remotipart (v1.0.2, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="resque (v1.20.0, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rest-client (v1.6.7, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-ole (v1.2.11.3, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-tmdb (v0.2.1, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.1.15, RVM: ruby-1.9.3-p194 [cul8r]) [gem]" level="application" />
